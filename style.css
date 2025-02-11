@@ -222,20 +222,18 @@
 #inspiracao {
     display: flex;
     width: 100%;
-    height: 30vw;
-    flex-direction: row;
+    height: 90vw;
+    padding:5vw 0;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#F0F0F0;
-    background-image:url('images/bg.png');
-    background-repeat: no-repeat;
-    background-size: 100vw 30vw;
-    background-position: bottom;
+    background: url('images/bg2.png') no-repeat center center / cover;
 }
 .dv1{
     display: flex;
     width:100%;
     height:100%;
+    padding: 0 0 5vw 0;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -244,6 +242,7 @@
     font-family: 'elevate';
     font-size:2vw;
     text-align: center;
+    color:#F0F0F0;
     width: 100%;
     padding: 2vw 0;
 }
@@ -252,33 +251,12 @@
     font-size: 1.25vw;
     text-align: justify;
     text-align-last: center;
-    width:70%;
-}
-@media screen and (max-width:768px) {
-    .sc2 {
-        display: flex;
-        width: 100%;
-        height: 200vw;
-        padding: 5vw 0 0 0;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        overflow: hidden;
-    }
-}
-.sc3{
-    display:flex;
-    width:100%;
-    height:90vw;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     color:#F0F0F0;
-    background: #0D0D0D;
+    width:70%;
 }
 .dv2{
     display: flex;
-    width: 100%;
+    width: 80%;
     justify-content: center;
     align-items: center;
 }
@@ -294,7 +272,8 @@
     font-size:2vw;
     text-align: center;
     letter-spacing: 0.1vw;
-    width: 60%;
+    color:#F0F0F0;
+    width: 100%;
     padding:2vw 0;
 }
 .tx2{
@@ -302,7 +281,8 @@
     font-size:1.25vw;
     text-align: justify;
     text-align-last: left;
-    width: 60%;
+    color:#F0F0F0;
+    width: 80%;
 }
 .im1{
     display: flex;
@@ -313,15 +293,15 @@
     border-radius:2vw;
 }
 @media screen and (max-width:768px) {
-    .sc3{
-        display:flex;
-        width:100%;
-        height:90vw;
+    .sc2 {
+        display: flex;
+        width: 100%;
+        height: 200vw;
+        padding: 5vw 0 0 0;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        color:#F0F0F0;
-        background: #0D0D0D;
+        overflow: hidden;
     }
     .dv2{
         display: flex;

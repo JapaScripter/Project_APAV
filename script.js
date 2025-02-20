@@ -1,46 +1,37 @@
 const header = document.getElementById('hd');
+const menuList = document.getElementById('lsm');
+const close = document.getElementById('cmn');
 
-window.addEventListener('scroll', function() {
-  if (window.scrollY > 0) {
-    header.style.backgroundColor = 'rgba(13,13,13,0.7)';
-  } else {
-    header.style.backgroundColor = 'transparent';
+/// Função para atualizar o estilo do cabeçalho com base no scroll
+function updateHeaderStyle() {
+    if (window.scrollY > 10) {
+      header.style.backgroundColor = 'rgba(13,13,13,0.7)';
+    } else {
+      header.style.backgroundColor = 'transparent';
+    }
   }
-});
 
-// A função updateHeaderStyle agora será chamada apenas quando houver o scroll, para evitar que o fundo apareça inicialmente
+// Inicializa o estilo do cabeçalho
 window.addEventListener('scroll', updateHeaderStyle);
 
-// Não é necessário chamar updateHeaderStyle() imediatamente, a função será acionada ao rolar a página
-// Então, remova a chamada direta de updateHeaderStyle após o carregamento.
-window.onload = function() {
-    window.scrollTo(0, 0);  // Garante que o scroll inicie no topo
-    // Não chamamos updateHeaderStyle aqui, pois o listener de scroll já vai gerenciar isso
-};
+// Garante que o scroll inicie no topo quando a página for carregada
+window.onload = () => window.scrollTo(0, 0);
 
-document.addEventListener('DOMContentLoaded', function() {
-    var menuList = document.getElementById('lsm');
-    menuList.style.display = 'none';
-  });
+// Oculta o menu ao carregar o conteúdo
+document.addEventListener('DOMContentLoaded', () => {
+  menuList.style.display = 'none';
+});
 
+// Função para alternar a exibição do menu
 function toggleMenu() {
-var menuList = document.getElementById('lsm');
-if (menuList.style.display === 'none' || menuList.style.display === '') {
-    menuList.style.display = 'flex';
-} else {
-    menuList.style.display = 'none';
+  menuList.style.display = (menuList.style.display === 'none' || menuList.style.display === '') ? 'flex' : 'none';
 }
-};
 
+// Alterna a exibição do menu ao clicar no ícone de fechar
 function toggleoffMenu() {
-var menuList = document.getElementById('lsm');
-var close = document.getElementById('cmn');
-if (menuList.style.display === 'none' || menuList.style.display === '') {
-    menuList.style.display = 'flex';
-} else {
-    menuList.style.display = 'none';
+  toggleMenu();  // Aproveita a lógica de toggleMenu para evitar duplicação
 }
-};
+
 /*! jQuery v3.3.1 | (c) JS Foundation and other contributors | jquery.org/license */
 ! function(e, t) {
     "use strict";

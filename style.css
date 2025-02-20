@@ -411,18 +411,18 @@
 }
 .dv5{
     display: flex;
-    width: 100%;
+    width: 40%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .im4 {
     width: 3vw;
-    padding: 0 1vw;
+    padding: 1vw;
 }
 .im4:hover {
     background:#e80000;
-    border-radius:2vw;
+    border-radius:100%;
     cursor: pointer;
 }
 .im41 {
@@ -637,6 +637,25 @@
     width:14vw;
     height:14vw;
     border-radius:1vw;
+}
+.sobrebt{
+    font-family: 'elevate';
+    text-align: center;
+    color:#E80000;
+    width:auto;
+    height:2vw;
+    justify-content: center;
+    align-items: center;
+    padding:2vw;
+    margin:5vw 0;
+    background:#F0F0F0;
+    border-radius:2vw;
+}
+.sobrebt:hover{
+    color:#E80000;
+    background:#0D0D0D;
+    box-shadow: 0vw 0vw 1vw #F0F0F0;
+    cursor:pointer;
 }
 
 #doar{

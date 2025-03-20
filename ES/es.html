@@ -13,14 +13,15 @@
     <title>APAV</title>
     <!--|Title Tab|-->
 
-    <!--|CSS|-->
+    <!--|Import|-->
     <link rel="stylesheet" href="../style.css">
-    <!-- Adicionar a folha de estilo (CSS) do AOS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- Adicionar o script do AOS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <!--|CSS|-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--|Import|-->
 
     <!--|Script Header and Footer Import|-->
     <script>fetch("header.html").then((e=>e.text())).then((e=>{document.querySelector("header").innerHTML=e})),fetch("footer.html").then((e=>e.text())).then((e=>{document.querySelector("footer").innerHTML=e}));</script>
@@ -35,17 +36,18 @@
 
     <main>
       <section id="sc1">
-        <div class="video-fundo">
+        <div data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="5000" class="video-fundo">
           <video autoplay loop>
-            <source src="../images/APAV.mp4" type="video/mp4">
+            <source src="../images/apav.mp4" type="video/mp4" autoplay>
             Su navegador no soporta este vídeo.
           </video>
         </div>
-        <h1 class="tt1">Proyecto Social<br><br>y Evangelismo</h1>
+        <h1 class="tt1" data-aos="flip-left" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-duration="5000">Proyecto Social<br><br>y Evangelismo</h1>
       </section>
       <section id="inspiracao">
         <div class="dv1">
-          <h2 class="tt2">Inspirados en la fe Cristiana</h2>
+          <h2 class="tt2">INSPIRADOS EN LA FE CRISTIANA</h2>
+          <span class="separator"></span>
           <p class="tx1">
             La Associação Projeto Alcançando Vidas se dedica a servir a los demás, llevando el amor de Dios a las comunidades más necesitadas.
             <br>
@@ -58,22 +60,26 @@
         </div>
         <div class="dv2">
           <div class="dv3">
-            <img class="im1" src="../images/1.JPG">
-          </div>
-          <div class="dv3">
-            <h2 class="tt3">Misión</h2>
+            <h2 class="tt3">MISIÓN</h2>
+            <span class="separator"></span>
             <p class="tx2">
               Promover el desarrollo y bienestar de las familias en situación de vulnerabilidad social, ofreciendo apoyo, recursos y formación que les permitan construir una vida digna y autosuficiente.
+              <br>
               <br>
               Nuestra misión es construir una red de apoyo que fortalezca los vínculos comunitarios y contribuya a reducir las desigualdades sociales. Buscamos ofrecer oportunidades de crecimiento y promover la autonomía de todas las familias que atendemos.
             </p>
           </div>
+          <div class="dv3">
+            <img class="im1" src="../images/1.JPG">
+          </div>
         </div>
         <div class="dv2">
           <div class="dv3">
-            <h2 class="tt3">Visión</h2>
+            <h2 class="tt3">VISIÓN</h2>
+            <span class="separator"></span>
             <p class="tx2">
               Ser un referente nacional en atención y apoyo a familias en situación de vulnerabilidad, contribuyendo a la construcción de una sociedad más justa, inclusiva y solidaria.
+              <br>
               <br>
               Aspiramos a un futuro donde todas las familias tengan acceso a derechos y oportunidades, superando barreras sociales y logrando una mejor calidad de vida.
             </p>
@@ -84,10 +90,8 @@
         </div>
         <div class="dv2">
           <div class="dv3">
-            <img class="im1" src="../images/10.jpeg">
-          </div>
-          <div class="dv3">
-            <h2 class="tt3">Valores</h2>
+            <h2 class="tt3">VALORES</h2>
+            <span class="separator"></span>
             <p class="tx2">
               Empatía: Nos ponemos en el lugar de los demás, buscando comprender y atender las necesidades específicas de cada familia con respeto y sensibilidad.
               <br>
@@ -95,14 +99,11 @@
               Transparencia: Actuamos con claridad y responsabilidad en todas las acciones, promoviendo la confianza y el respeto entre familias, socios y empleados.
               <br>
               <br>
-              Compromiso Social: Estamos dedicados a la causa de la transformación social y trabajamos incansablemente para brindar una mejora continua en las vidas de las familias que apoyamos.
-              <br>
-              <br>
               Solidaridad: Creemos en la fuerza de la comunidad y el poder de la unidad para superar los desafíos y construir un entorno más inclusivo para todos.
-              <br>
-              <br>
-              Resiliencia: Afrontamos los obstáculos con determinación y animamos a las familias a superar sus dificultades, ofreciendo un apoyo continuo y adaptado a cada realidad.
             </p>
+          </div>
+          <div class="dv3">
+            <img class="im1" src="../images/10.JPG">
           </div>
         </div>
       </section>
@@ -110,7 +111,7 @@
         <div class="dv4">
           <h2 class="tt4">Contáctenos</h2>
           <p class="tx4">R. Viracopos - Vila Heliopolis, São Paulo - SP, 04236-070</p>
-          <p class="tx4">Lun à Dom das 18:00 às 22:00</p>
+          <p class="tx4">Lun a Dom de 6:00 pm a 10:00 pm</p>
           <p class="tx4"><a href="tel:+5511914874136" class="tx41">Teléfono: +55 (11) 9 1487-4136</a></p>
           <div class="dv5">
             <a href="https://www.instagram.com/associacaoalcancandovidas/" target="_blank">
@@ -123,12 +124,10 @@
         </div>
         <iframe class="im41" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.684268497629!2d-46.5916984!3d-23.6156537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d6962fc2625%3A0x5fa2889d038577a8!2sAssocia%C3%A7%C3%A3o%20Alcan%C3%A7ando%20Vidas%20-%20APAV!5e0!3m2!1spt-BR!2sbr!4v1738076114171!5m2!1spt-BR!2sbr" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
+      <a href="https://api.whatsapp.com/send?phone=5511914874136&text=%20site?" target="_blank">
+        <img class="whats" src="../images/whats.svg">
+      </a>
     </main>
-
     <footer></footer>
-
-    <!--|Script|-->
-    <script src="../script.js"></script>
-    <!--|Script|-->
   </body>
 </html>

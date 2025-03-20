@@ -10,18 +10,18 @@
     <!--|Meta Config.|-->
 
     <!--|Title Tab|-->
-    <title>APAV|Contact Us</title>
+    <title>APAV | Contact Us</title>
     <!--|Title Tab|-->
 
-    <!--|CSS|-->
+    <!--|Import|-->
     <link rel="stylesheet" href="../style.css">
-    <!-- Adicionar a folha de estilo (CSS) do AOS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- Adicionar o script do AOS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <!--|CSS|-->
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--|Import|-->
     <!--|Script Header and Footer Import|-->
     <script>fetch("header.html").then((e=>e.text())).then((e=>{document.querySelector("header").innerHTML=e})),fetch("footer.html").then((e=>e.text())).then((e=>{document.querySelector("footer").innerHTML=e}));</script>
     <!--|Script Header and Footer Import|-->
@@ -39,7 +39,7 @@
           <h2 class="tt4">Contact Us</h2>
           <p class="tx4">R. Viracopos - Vila Heliopolis, São Paulo - SP, 04236-070</p>
           <p class="tx4">Mon to Sun das 18:00 às 22:00</p>
-          <p class="tx4"><a href="tel:+5511914874136" class="tx41">Celphone: +55 (11) 9 1487-4136</a></p>
+          <p class="tx4"><a href="tel:+5511914874136" class="tx41">Telphone: +55 (11) 9 1487-4136</a></p>
           <div class="dv5">
             <a href="https://www.instagram.com/associacaoalcancandovidas/" target="_blank">
               <img class="im4" src="../images/instagram.svg">

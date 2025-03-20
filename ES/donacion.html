@@ -6,16 +6,22 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="description" content="APAV">
     <meta name="author" content="Unilatem">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <!--|Meta Config.|-->
 
     <!--|Title Tab|-->
-    <title>APAV|Donaciones</title>
+    <title>APAV | Donaciones</title>
     <!--|Title Tab|-->
 
-    <!--|CSS|-->
-    <link rel="stylesheet" href="style.css">
-    <!--|CSS|-->
+    <!--|Import|-->
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--|Import|-->
 
     <!--|Script Header and Footer Import|-->
     <script>fetch("header.html").then((e=>e.text())).then((e=>{document.querySelector("header").innerHTML=e})),fetch("footer.html").then((e=>e.text())).then((e=>{document.querySelector("footer").innerHTML=e}));</script>
@@ -32,54 +38,36 @@
         <section id="doar">
           <h2 class="doartt1">Doações | Donaciones | Donations</h2>
           <h3 class="doartt1">PIX</h3>
-          <div class="doardv1">
-            <div class="doardv2">
-              <ul>
-              <li class="doartx1">Valor:R$10</li>
-              </ul>
-              <img class="doarim" src="../images/qrcode.jpeg">
+          <div class="doardv0">
+            <div class="doardv01">
+              <img class="doarim0" src="../images/doar1.jpg">
+              <img class="doarim0" src="../images/doar10.JPG">
+              <img class="doarim0" src="../images/doar13.JPG">
+              <img class="doarim0" src="../images/doar25.JPG">
             </div>
-            <div class="doardv2">
-              <ul>
-                <li class="doartx1">Valor:R$20</li>
-              </ul>
-              <img class="doarim" src="../images/qrcode.jpeg">
+            <div class="doardv1">
+              <div class="doardv2">
+                <img class="doarim2" src="../images/qrcode.jpeg">
+              </div>
+              <!--
+              <div>
+                  <h3>Cartão</h3>
+                  <p>Serviço Inativo</p>
+              </div>
+              -->
             </div>
-            <div class="doardv2">
-              <ul>
-                <li class="doartx1">Valor:R$50</li>
-              </ul>
-              <img class="doarim" src="../images/qrcode.jpeg">
+            <div class="doardv01">
+              <img class="doarim0" src="../images/doar9.JPG">
+              <img class="doarim0" src="../images/doar5.JPG">
+              <img class="doarim0" src="../images/doar20.JPG">
+              <img class="doarim0" src="../images/doar7.JPG">
             </div>
-            <div class="doardv2">
-              <ul>
-                <li class="doartx1">Valor:R$100</li>
-              </ul>
-              <img class="doarim" src="../images/qrcode.jpeg">
-            </div>
-            <div class="doardv2">
-              <ul>
-              <li class="doartx1">Banco Caixa</li>
-              <li class="doartx1">Agência:</li>
-              <li class="doartx1">Conta:</li>
-              <li class="doartx1">Nome:</li>
-              </ul>
-              <img class="doarim" src="../images/qrcode.jpeg">
-            </div>
-            <!--
-            <div>
-                <h3>Cartão</h3>
-                <p>Serviço Inativo</p>
-            </div>
-            -->
           </div>
         </section>
+        <a href="https://api.whatsapp.com/send?phone=5511914874136&text=%20site?" target="_blank">
+          <img class="whats" src="../images/whats.svg">
+        </a>
     </main>
-
     <footer></footer>
-
-    <!--|Script|-->
-    <script src="../script.js"></script>
-    <!--|Script|-->
   </body>
 </html>

@@ -10,18 +10,18 @@
     <!--|Meta Config.|-->
 
     <!--|Title Tab|-->
-    <title>APAV|Contáctenos</title>
+    <title>APAV | Contáctenos</title>
     <!--|Title Tab|-->
 
-    <!--|CSS|-->
+    <!--|Import|-->
     <link rel="stylesheet" href="../style.css">
-
-    <!-- Adicionar a folha de estilo (CSS) do AOS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- Adicionar o script do AOS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <!--|CSS|-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--|Import|-->
 
     <!--|Script Header and Footer Import|-->
     <script>fetch("header.html").then((e=>e.text())).then((e=>{document.querySelector("header").innerHTML=e})),fetch("footer.html").then((e=>e.text())).then((e=>{document.querySelector("footer").innerHTML=e}));</script>

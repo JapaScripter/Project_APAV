@@ -13,15 +13,15 @@
     <title>APAV</title>
     <!--|Title Tab|-->
 
-    <!--|CSS|-->
+    <!--|Import|-->
     <link rel="stylesheet" href="../style.css">
-
-    <!-- Adicionar a folha de estilo (CSS) do AOS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- Adicionar o script do AOS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <!--|CSS|-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--|Import|-->
 
     <!--|Script Header and Footer Import|-->
     <script>fetch("header.html").then((e=>e.text())).then((e=>{document.querySelector("header").innerHTML=e})),fetch("footer.html").then((e=>e.text())).then((e=>{document.querySelector("footer").innerHTML=e}));</script>
@@ -36,45 +36,50 @@
 
     <main>
       <section id="sc1">
-        <div class="video-fundo">
+        <div data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="5000" class="video-fundo">
           <video autoplay loop>
-            <source src="../images/APAV.mp4" type="video/mp4">
-            Your browser don't support this video.
+            <source src="../images/apav.mp4" type="video/mp4" autoplay>
+            Your browser does not support this video.
           </video>
         </div>
-        <h1 class="tt1">Social Project<br><br>and Evangelism</h1>
+        <h1 class="tt1" data-aos="flip-left" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-duration="5000">Social Project<br><br>and Evangelism</h1>
       </section>
       <section id="inspiracao">
         <div class="dv1">
-          <h2 class="tt2">INSPIRED BY CHRISTIAN FAITH</h2>
+          <h2 class="tt2">INSPIRED BY THE CHRISTIAN FAITH</h2>
+          <span class="separator"></span>
           <p class="tx1">
-            The Project Association Reaching Lifes is dedicated to serving others, bringing God's love to the communities most in need.
+            The Projeto Alcançando Vidas Association is dedicated to serving others, bringing God's love to the neediest communities.
             <br>
             <br>
             In Heliópolis and other regions, we work tirelessly to improve the quality of life of families in vulnerable situations, offering food, maternal support and promoting social inclusion.
             <br>
             <br>
-            Our caravans bring hope to recovery houses, indigenous villages and needy communities in different countries. We believe that faith in action is capable of transforming lives and building a more promising future for everyone."
+            Our caravans bring hope to recovery homes, indigenous villages and underprivileged communities in several countries. We believe that faith in action can transform lives and build a brighter future for everyone."
           </p>
         </div>
         <div class="dv2">
           <div class="dv3">
-            <img class="im1" src="../images/1.JPG">
+            <h2 class="tt3">MISSION</h2>
+            <span class="separator"></span>
+            <p class="tx2">
+              Promote the development and well-being of families in situations of social vulnerability, offering support, resources and training that enable the construction of a dignified and self-sufficient life.
+              <br>
+              <br>
+              Our mission is to build a support network that strengthens community ties and contributes to reducing social inequalities. We seek to provide opportunities for growth and promote autonomy for all the families we serve.
+            </p>
           </div>
           <div class="dv3">
-            <h2 class="tt3">Mission</h2>
-            <p class="tx2">
-              Promote the development and well-being of families in situations of social vulnerability, offering support, resources and training that enable them to build a dignified and self-sufficient life.
-              <br>
-              Our mission is to build a support network that strengthens community ties and contributes to reducing social inequalities. We seek to offer opportunities for growth and promote the autonomy of all the families we serve.
-            </p>
+            <img class="im1" src="../images/1.JPG">
           </div>
         </div>
         <div class="dv2">
           <div class="dv3">
-            <h2 class="tt3">Vision</h2>
+            <h2 class="tt3">VISION</h2>
+            <span class="separator"></span>
             <p class="tx2">
-              To be a national reference in assistance and support for families in vulnerable situations, contributing to the construction of a fairer, more inclusive and supportive society.
+              To be a national reference in assistance and support for families in vulnerable situations, contributing to the construction of a more just, inclusive and supportive society.
+              <br>
               <br>
               We aspire to a future where all families have access to rights and opportunities, overcoming social barriers and achieving a better quality of life.
             </p>
@@ -85,25 +90,20 @@
         </div>
         <div class="dv2">
           <div class="dv3">
-            <img class="im1" src="../images/10.jpeg">
-          </div>
-          <div class="dv3">
-            <h2 class="tt3">Values</h2>
+            <h2 class="tt3">VALUES</h2>
+            <span class="separator"></span>
             <p class="tx2">
-              Empathy: We put ourselves in other people's shoes, seeking to understand and meet the specific needs of each family with respect and sensitivity.
+              Empathy: We put ourselves in the other person's shoes, seeking to understand and meet the specific needs of each family with respect and sensitivity.
               <br>
               <br>
               Transparency: We act with clarity and responsibility in all actions, promoting trust and respect among families, partners and employees.
               <br>
               <br>
-              Social Commitment: We are dedicated to the cause of social transformation and work tirelessly to provide continuous improvement in the lives of the families we support.
-              <br>
-              <br>
               Solidarity: We believe in the strength of the community and the power of unity to overcome challenges and build a more inclusive environment for everyone.
-              <br>
-              <br>
-              Resilience: We face obstacles with determination and encourage families to overcome their difficulties, offering continuous support adapted to each reality.
             </p>
+          </div>
+          <div class="dv3">
+            <img class="im1" src="../images/10.JPG">
           </div>
         </div>
       </section>
@@ -111,8 +111,8 @@
         <div class="dv4">
           <h2 class="tt4">Contact Us</h2>
           <p class="tx4">R. Viracopos - Vila Heliopolis, São Paulo - SP, 04236-070</p>
-          <p class="tx4">Mon to Sun das 18:00 às 22:00</p>
-          <p class="tx4"><a href="tel:+5511914874136" class="tx41">Celphone: +55 (11) 9 1487-4136</a></p>
+          <p class="tx4">Mon to Sun from 6:00pm to 10:00pm</p>
+          <p class="tx4"><a href="tel:+5511914874136" class="tx41">Telphone: +55 (11) 9 1487-4136</a></p>
           <div class="dv5">
             <a href="https://www.instagram.com/associacaoalcancandovidas/" target="_blank">
               <img class="im4" src="../images/instagram.svg">
@@ -124,12 +124,10 @@
         </div>
         <iframe class="im41" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.684268497629!2d-46.5916984!3d-23.6156537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d6962fc2625%3A0x5fa2889d038577a8!2sAssocia%C3%A7%C3%A3o%20Alcan%C3%A7ando%20Vidas%20-%20APAV!5e0!3m2!1spt-BR!2sbr!4v1738076114171!5m2!1spt-BR!2sbr" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
+      <a href="https://api.whatsapp.com/send?phone=5511914874136&text=%20site?" target="_blank">
+        <img class="whats" src="../images/whats.svg">
+      </a>
     </main>
-
     <footer></footer>
-
-    <!--|Script|-->
-    <script src="../script.js"></script>
-    <!--|Script|-->
   </body>
 </html>

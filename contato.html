@@ -13,14 +13,15 @@
     <title>APAV</title>
     <!--|Title Tab|-->
 
-    <!--|CSS|-->
+    <!--|Import|-->
     <link rel="stylesheet" href="style.css">
-    <!-- Adicionar a folha de estilo (CSS) do AOS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- Adicionar o script do AOS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <!--|CSS|-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--|Import|-->
 
     <!--|Script Header and Footer Import|-->
     <script>fetch("header.html").then((e=>e.text())).then((e=>{document.querySelector("header").innerHTML=e})),fetch("footer.html").then((e=>e.text())).then((e=>{document.querySelector("footer").innerHTML=e}));</script>
@@ -51,12 +52,10 @@
         </div>
         <iframe class="im41" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.684268497629!2d-46.5916984!3d-23.6156537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d6962fc2625%3A0x5fa2889d038577a8!2sAssocia%C3%A7%C3%A3o%20Alcan%C3%A7ando%20Vidas%20-%20APAV!5e0!3m2!1spt-BR!2sbr!4v1738076114171!5m2!1spt-BR!2sbr" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
+      <a href="https://api.whatsapp.com/send?phone=5511914874136&text=%20site?" target="_blank">
+        <img class="whats" src="images/whats.svg">
+      </a>
     </main>
-
     <footer></footer>
-
-    <!--|Script|-->
-    <script src="script.js"></script>
-    <!--|Script|-->
   </body>
 </html>

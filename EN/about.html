@@ -10,17 +10,18 @@
     <!--|Meta Config.|-->
 
     <!--|Title Tab|-->
-    <title>APAV|About Us</title>
+    <title>APAV | About</title>
     <!--|Title Tab|-->
 
-    <!--|CSS|-->
+    <!--|Import|-->
     <link rel="stylesheet" href="../style.css">
-    <!-- Adicionar a folha de estilo (CSS) do AOS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- Adicionar o script do AOS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <!--|CSS|-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--|Import|-->
 
     <!--|Script Header and Footer Import|-->
     <script>fetch("header.html").then((e=>e.text())).then((e=>{document.querySelector("header").innerHTML=e})),fetch("footer.html").then((e=>e.text())).then((e=>{document.querySelector("footer").innerHTML=e}));</script>
@@ -36,61 +37,104 @@
     <main>
       <section id="sobre">
         <div class="sobredv">
-          <h2 class="sobrett1">About Us</h2>
+          <div data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="5000" class="sobredv0">
+            <img class="sobrehero" src="../images/bg3.jpg">
+          </div>
+          <h2 data-aos="flip-left" data-aos-delay="700" data-aos-easing="ease-in-out" data-aos-duration="5000" class="sobrett1">About Us</h2>
         </div>
         <div class="sobredv1">
           <div class="sobredv12">
-            <img src="../images/hands.svg" class="sobreim">
-            <p class="sobretx">The Associação Projeto Alcançando Vidas is a missionary and humanitarian initiative that aims to bring the message of love, hope and transformation to those who need it most. Founded with the purpose of sharing the gospel of Jesus Christ, the project works with people in extremely vulnerable situations, such as homeless people, former drug users, former drug dealers, indigenous people, gypsies and many other needy communities around the world.</p>
+            <p class="sobretx">APAV - Associação Projeto Alcançando Vidas (Reaching Lives Project Association) is a missionary and humanitarian initiative dedicated to bringing love, hope and transformation to those who need it most. Founded with the purpose of sharing the gospel of Jesus Christ, APAV works with people in situations of extreme vulnerability, including homeless people, former drug addicts, indigenous peoples, sertanejos, quilombolas and many other needy peoples around the world.</Video></p>
           </div>
-          <br>
-          <br>
-          <div class="sobredv3">
-            <div class="sobredv4">
-              <p class="sobretx1">With an approach centered on the love and sacrifice of Jesus, who gave his life to save humanity, the Association seeks to reach those who are often forgotten by society. The goal is not only to offer spiritual comfort, but also to provide the dignity and transformation that only the gospel can bring. Furthermore, the Association offers psychological, social and even material support, so that these people can reintegrate into society with new goals and hopes.</p>
+          <div id="presta">
+            <h2 class="subtitulo" style="margin:5vw 0 0 0;color:#FFFFFF">Our daily life</h2>
+            <div class="slideres">
+                <div class="slide-track">
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/1.JPG" alt="IMAGEM 1"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/2.JPG" alt="IMAGEM 2"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/3.JPG" alt="IMAGEM 3"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/4.JPG" alt="IMAGEM 4"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/5.JPG" alt="IMAGEM 5"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/6.JPG" alt="IMAGEM 6"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/7.JPG" alt="IMAGEM 7"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/8.JPG" alt="IMAGEM 8"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/9.JPG" alt="IMAGEM 9"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/10.JPG" alt="IMAGEM 10"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/11.JPG" alt="IMAGEM 11"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/12.JPG" alt="IMAGEM 12"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/13.JPG" alt="IMAGEM 13"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/14.JPG" alt="IMAGEM 14"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/15.JPG" alt="IMAGEM 15"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/16.JPG" alt="IMAGEM 16"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/17.JPG" alt="IMAGEM 17"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/18.JPG" alt="IMAGEM 18"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/19.JPG" alt="IMAGEM 19"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/20.JPG" alt="IMAGEM 20"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/21.JPG" alt="IMAGEM 21"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/22.JPG" alt="IMAGEM 22"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/23.JPG" alt="IMAGEM 23"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/24.JPG" alt="IMAGEM 24"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/25.JPG" alt="IMAGEM 25"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/26.JPG" alt="IMAGEM 26"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/27.JPG" alt="IMAGEM 27"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/28.JPG" alt="IMAGEM 28"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/29.JPG" alt="IMAGEM 29"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/1.JPG" alt="IMAGEM 1"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/2.JPG" alt="IMAGEM 2"></div>
+                    <div class="slides"><img class="slidesimages" src="../images/carrousel/3.JPG" alt="IMAGEM 3"></div>
+                </div>
             </div>
-            <img class="sobreim1" src="../images/5.jpg">
           </div>
-          <br>
-          <br>
+          <div class="sobredv4">
+            <p class="sobretx1">In addition, the Association has a team of health care volunteers who provide care in our office to support these families. Our professionals include doctors, psychologists and speech therapists. In addition to providing immediate assistance, the Association is always looking for ways to reintegrate these people into society, providing new goals and hope through our work.</p>
+          </div>
+          <div class="sobredv4">
+            <p class="sobretx1">With actions carried out in countries such as Brazil, Bolivia, Paraguay, Chile, Africa, among others, the Reaching Lives Project is dedicated to reaching the most remote corners and the most marginalized populations. Through visits, distribution of food, clothing, and medical services, the project strives to make a difference in the lives of those who live on the streets or in conditions of extreme poverty.</p>
+          </div>
           <div class="sobredv2">
-            <div class="sobredv4">
-              <p class="sobretx1">With actions carried out in countries such as Brazil, Bolivia, Paraguay, Chile, Africa, among others, the Alcançando Vidas Project is dedicated to reaching the most remote corners and the most marginalized populations. Through visits, distribution of food, clothing, and medical services, the project strives to make a difference in the lives of those who live on the streets or in conditions of extreme poverty.</p>
+            <div class="sobredv21">
+              <img class="sobreim3" src="../images/brazil.svg">
+              <h3 class="tt5">Brazil</h3>
             </div>
-            <img class="sobreim1" src="../images/6.jpg">
+            <div class="sobredv21">
+              <img class="sobreim3" src="../images/bolivia.svg">
+              <h3 class="tt5">Bolivia</h3>
+            </div>
+            <div class="sobredv21">
+              <img class="sobreim3" src="../images/paraguai.svg">
+              <h3 class="tt5">Paraguay</h3>
+            </div>
+            <div class="sobredv21">
+              <img class="sobreim3" src="../images/chile.svg">
+              <h3 class="tt5">Chile</h3>
+            </div>
+            <div class="sobredv212">
+              <img class="sobreim3" src="../images/africa.svg">
+              <h3 class="tt5">African Continent</h3>
+            </div>
           </div>
-          <br>
-          <br>
+          
+          <div class="sobredv4">
+            <p class="sobretx1">Volunteers/missionaries are the heart of this project, driven by love and a genuine desire to help others, following the example of Christ, who showed no partiality to anyone. With dedication and compassion, they offer their time, talents and efforts to transform lives, without expecting anything in return. Their commitment goes beyond providing assistance; they bring hope, comfort and dignity to those who need it most. Every gesture, no matter how small, reflects the true meaning of loving others and makes a difference in the journey of those seeking a new chance.</p>
+          </div>
+          <div class="sobredv4">
+            <p class="sobretx1">With an approach centered on the love and sacrifice of Jesus, who gave his life to save humanity, the Association seeks to reach those who are often forgotten by society. The goal is not only to offer spiritual comfort, but also to restore dignity and promote transformation through welfare support.</p>
+          </div>
           <div class="sobredv3">
-            <div class="sobredv4">
-              <p class="sobretx1">The missionaries who are part of this project not only share the word of Jesus, but become friends, counselors and true supporters, providing a path of rehabilitation and restoration for those who wish to start over. They believe that, through the unconditional love of Christ, lives can be transformed and destinies can be changed, regardless of the past or the difficulties faced.</p>
-            </div>
-            <img class="sobreim1" src="../images/3.JPG">
+            <img class="sobreim3" src="../images/christ.svg">
+            <img class="sobreim3" src="../images/equal.svg">
+            <img class="sobreim3" src="../images/heartchrist.svg">
           </div>
-          <br>
-          <br>
-          <div class="sobredv2">
-            <div class="sobredv4">
-              <p class="sobretx1">The Associação Projeto Alcançando Vidas is more than just social work: it is a mission of faith that crosses borders, overcomes cultural barriers and, above all, touches hearts. It is a true demonstration that Jesus' sacrifice knows no limits, and divine love is capable of restoring even the most lost lives.</p>
-            </div>
-            <img class="sobreim1" src="../images/8.jpg">
+          <div class="sobredv4">
+            <p class="sobretx1">Join us in this mission of transformation! Together, we can impact the lives of thousands of people, bringing hope, renewal and the love of Christ to those who need it most. Be part of this change!</p>
           </div>
-          <br>
-          <br>
-          <div class="sobredv3">
-            <div class="sobredv4">
-              <p class="sobretx1">Join us on this mission of transformation. Together, we can make a difference in the lives of thousands of people and thus spread the message of hope and renewal that comes from Christ.</p>
-            </div>
-            <img class="sobreim1" src="../images/9.jpg">
-          </div>
+          <a class="sobrebt">I WANT TO BE A VOLUNTEER<br><img class="sobreim2" src="../images/heart.svg"></a>
         </div>
       </section>
+      <a href="https://api.whatsapp.com/send?phone=5511914874136&text=%20site?" target="_blank">
+        <img class="whats" src="../images/whats.svg">
+      </a>
     </main>
-
     <footer></footer>
-
-    <!--|Script|-->
-    <script src="../script.js"></script>
-    <!--|Script|-->
   </body>
 </html>

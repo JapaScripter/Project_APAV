@@ -2,63 +2,6 @@
     font-family: 'bien';
     src: url('font/Bienvenido.ttf') format('woff2'), url('font/Bienvenido.ttf') format('woff');
 }
-
-.loading {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    background: #0D0D0D;
-    z-index: 100;
-    opacity: 1;
-}
-
-.word {
-    font-size:5vw;
-    color: #F0F0F0;
-    position: fixed;
-    display: block;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-.letter{
-    display: inline-block;
-    animation: bounce 0.45s infinite alternate;
-}
-
-.letter:nth-child(1) {
-    animation-delay: 0s;
-}
-.letter:nth-child(2) {
-    animation-delay: 0.2s;
-}
-.letter:nth-child(3) {
-    animation-delay: 0.4s;
-}
-.letter:nth-child(4) {
-    animation-delay: 0.6s;
-}
-.letter:nth-child(5) {
-    animation-delay: 0.8s;
-}
-.letter:nth-child(6) {
-    animation-delay: 1.0s;
-}
-.letter:nth-child(7) {
-    animation-delay: 1.2s;
-}
-.letter:nth-child(8) {
-    animation-delay: 1.4s;
-}
-
 @keyframes bounce {
     0% {
         transform: translateY(0);
@@ -67,35 +10,6 @@
         transform: translateY(-10px);
     }
 }
-
-/* Estilo dos pontinhos pulando */
-.dots {
-    font-size: 2rem;
-    margin-top: 20px;
-    color: #F0F0F0;
-    position:fixed;
-    display: inline-block;
-    bottom:20vw;
-}
-
-.dot {
-    display: inline-block;
-    opacity: 0;
-    animation: jump 1.2s infinite ease-in-out;
-}
-
-.dot:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.dot:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.dot:nth-child(3) {
-    animation-delay: 0.8s;
-}
-
 @keyframes jump {
     0%, 100% {
         transform: translateY(0);
@@ -106,19 +20,6 @@
         opacity: 1;
     }
 }
-
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-10px);
-    }
-}
-
-
-
-
 @keyframes shake{
     0% {
         transform: translateX(0);
@@ -809,6 +710,81 @@
     animation: shake 4s ease-in-out infinite;
     z-index:100;
 }
+.loading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background: #0D0D0D;
+    z-index: 100;
+    opacity: 1;
+}
+.word {
+    font-size:5vw;
+    color: #F0F0F0;
+    position: fixed;
+    display: block;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.letter{
+    display: inline-block;
+    animation: bounce 0.45s infinite alternate;
+}
+.letter:nth-child(1) {
+    animation-delay: 0s;
+}
+.letter:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.letter:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.letter:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.letter:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.letter:nth-child(6) {
+    animation-delay: 1.0s;
+}
+.letter:nth-child(7) {
+    animation-delay: 1.2s;
+}
+.letter:nth-child(8) {
+    animation-delay: 1.4s;
+}
+/* Estilo dos pontinhos pulando */
+.dots {
+    font-size: 2rem;
+    color: #F0F0F0;
+    position:fixed;
+    display: inline-block;
+    bottom:20vw;
+}
+.dot {
+    display: inline-block;
+    opacity: 0;
+    animation: jump 1.2s infinite ease-in-out;
+}
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+.dot:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.dot:nth-child(3) {
+    animation-delay: 0.8s;
+}
 @media screen and (max-width:768px) {
     html, body {
         overflow-x: hidden; /* Impede rolagem horizontal */
@@ -1082,5 +1058,8 @@
         width:15vw;
         bottom:15vw;
         right:5vw;
+    }
+    .dots {
+        bottom:100vw;
     }
 }

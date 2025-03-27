@@ -1,177 +1,167 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!--|Meta Config.|-->
-    <meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta name="description" content="APAV">
-    <meta name="author" content="Unilatem">
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <!--|Meta Config.|-->
 
-    <!--|Title Tab|-->
-    <title>APAV</title>
-    <!--|Title Tab|-->
+	<head>
+		<!--|Meta Config.|-->
+		<meta name="viewport" charset="utf-8" content="width=device-width initial-scale= 1.0">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="description" content="APAV">
+		<meta name="author" content="Unilatem">
+		<link rel="shortcut icon" href="../assets/images/favicon.ico">
+		<title>APAV</title>
+		<!--|Meta Config.|-->
 
-    <!--|Import|-->
-    <link rel="stylesheet" href="../style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../script.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!--|Import|-->
+		<!--|Import|-->
+		<link rel="stylesheet" href="../assets/css/style.css">
+		<script rel="text/javascript" src="../assets/js/script.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>document.addEventListener("DOMContentLoaded", function () { AOS.init(); /*Inicializa o AOS quando o DOM estiver completamente carregado se não estiver funcionando só o aos use o DOM*/ });</script>
+		<script>fetch("header.html").then((e => e.text())).then((e => { document.querySelector("header").innerHTML = e })), fetch("footer.html").then((e => e.text())).then((e => { document.querySelector("footer").innerHTML = e }));</script>
+		<!--|Import|-->
+	</head>
 
-    <!--|Script Header and Footer Import|-->
-    <script>fetch("header.html").then((e=>e.text())).then((e=>{document.querySelector("header").innerHTML=e})),fetch("footer.html").then((e=>e.text())).then((e=>{document.querySelector("footer").innerHTML=e}));</script>
-    <!--|Script Header and Footer Import|-->
+	<body>
+		<header></header>
+		<main>
+			<section id="he_sc">
+				<div class="he">
+					<video class="he_vd" autoplay loop>
+						<source src="../assets/images/apav.mp4" type="video/mp4" autoplay>
+						Your browser does not support this video.
+					</video>
+				</div>
+				<h1 class="he_tt" data-aos="flip-left" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-duration="5000">Social Project<br><br>and Evangelistic</h1>
+			</section>
+			<section id="ft_sc">
+				<div class="ft_dv">
+					<h2 class="ft_tt" data-aos="fade-up" data-aos-easing="ease-in-out">INSPIRED BY THE CHRISTIAN FAITH</h2>
+					<span class="separator" data-aos="fade-up" data-aos-easing="ease-in-out"></span>
+					<p class="ft_tx" data-aos="fade-up" data-aos-easing="ease-in-out">
+						The Projeto Alcançando Vidas Association is dedicated to serving others, bringing God's love to the neediest communities.
+						<br>
+						<br>
+						In Heliópolis and other regions, we work tirelessly to improve the quality of life of families in vulnerable situations, offering food, maternal support and promoting social inclusion.
+						<br>
+						<br>
+						Our caravans bring hope to recovery homes, indigenous villages and underprivileged communities in several countries. We believe that faith in action can transform lives and build a brighter future for everyone."
+					</p>
+				</div>
+				<div class="sd_dv">
+					<div class="td_dv">
+						<h2 class="td_tt" data-aos="fade-up" data-aos-easing="ease-in-out">MISSION</h2>
+						<span class="separator" data-aos="fade-up" data-aos-easing="ease-in-out"></span>
+						<p class="td_tx" data-aos="fade-up" data-aos-easing="ease-in-out">
+							Promote the development and well-being of families in situations of social vulnerability, offering support, resources and training that enable the construction of a dignified and self-sufficient life.
+							<br>
+							<br>
+							Our mission is to build a support network that strengthens community ties and contributes to reducing social inequalities. We seek to provide opportunities for growth and promote autonomy for all the families we serve.
+						</p>
+					</div>
+					<div class="td_dv" data-aos="fade-up" data-aos-easing="ease-in-out">
+						<img class="td_im" src="../assets/images/1.webp">
+					</div>
+				</div>
+				<div class="sd_dv">
+					<div class="td_dv">
+						<h2 class="td_tt" data-aos="fade-up" data-aos-easing="ease-in-out">VISION</h2>
+						<span class="separator" data-aos="fade-up" data-aos-easing="ease-in-out"></span>
+						<p class="td_tx" data-aos="fade-up" data-aos-easing="ease-in-out">
+							To be a national reference in assistance and support for families in vulnerable situations, contributing to the construction of a more just, inclusive and supportive society.
+							<br>
+							<br>
+							We aspire to a future where all families have access to rights and opportunities, overcoming social barriers and achieving a better quality of life.
+						</p>
+					</div>
+					<div class="td_dv" data-aos="fade-up" data-aos-easing="ease-in-out">
+						<img class="td_im" src="../assets/images/2.webp">
+					</div>
+				</div>
+				<div class="sd_dv">
+					<div class="td_dv">
+						<h2 class="td_tt" data-aos="fade-up" data-aos-easing="ease-in-out">VALUES</h2>
+						<span class="separator" data-aos="fade-up" data-aos-easing="ease-in-out"></span>
+						<p class="td_tx" data-aos="fade-up" data-aos-easing="ease-in-out">
+							Empathy: We put ourselves in the other person's shoes, seeking to understand and meet the specific needs of each family with respect and sensitivity.
+							<br>
+							<br>
+							Transparency: We act with clarity and responsibility in all actions, promoting trust and respect among families, partners and employees.
+							<br>
+							<br>
+							Solidarity: We believe in the strength of the community and the power of unity to overcome challenges and build a more inclusive environment for everyone.
+						</p>
+					</div>
+					<div class="td_dv" data-aos="fade-up" data-aos-easing="ease-in-out">
+						<img class="td_im" src="../assets/images/3.webp">
+					</div>
+				</div>
+			</section>
+			<section id="ct_sc">
+				<div class="ct_ft_dv" data-aos="fade-down" data-aos-easing="ease-in-out">
+					<h2 class="ct_tt">Contact Us</h2>
+					<p class="ct_ft_tx">R. Viracopos, 139 - Vila Heliópolis,<br>São Paulo - SP, 04236-070</p>
+					<p class="ct_ft_tx">Mon to Sun from 10:00 am to 18:00 pm</p>
+					<p class="ct_ft_tx"><a href="tel:+5511914874136" class="ct_sd_tx">Telphone: +55 (11) 9 1487-4136</a></p>
+					<div class="ct_sd_dv">
+						<a href="https://www.instagram.com/associacaoalcancandovidas/" target="_blank">
+							<img class="ct_sd_dv_ft_im" src="../assets/images/botoes/instagram.svg">
+						</a>
+						<a href="https://api.whatsapp.com/send?phone=5511914874136&text=Hello,%20I%20came%20across%20your%20website%20and%20would%20like%20to%20know%20more%20about%20the%20project!" target="_blank">
+							<img class=ct_sd_dv_ft_im src="../assets/images/botoes/whatsapp.svg">
+						</a>
+					</div>
+				</div>
+				<iframe class="ct_sd_dv_sd_im" data-aos="fade-down" data-aos-easing="ease-in-out" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.684268497629!2d-46.5916984!3d-23.6156537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d6962fc2625%3A0x5fa2889d038577a8!2sAssocia%C3%A7%C3%A3o%20Alcan%C3%A7ando%20Vidas%20-%20APAV!5e0!3m2!1spt-BR!2sbr!4v1738076114171!5m2!1spt-BR!2sbr" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</section>
+			<a href="https://api.whatsapp.com/send?phone=5511914874136&text=Olá,%20vim%20pelo%20site%20de%20vocês%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20projeto!" target="_blank">
+				<img class="whats" src="../assets/images/botoes/whats.svg">
+			</a>
+			<div class="loading">
+				<div class="loading_wd">
+					<div class="loading_lt">J</div>
+					<div class="loading_lt">e</div>
+					<div class="loading_lt">s</div>
+					<div class="loading_lt">u</div>
+					<div class="loading_lt">s</div>
+				</div>
+				<div class="loading_wd">
+					<div class="loading_lt">T</div>
+					<div class="loading_lt">h</div>
+					<div class="loading_lt">e </div>
+					<div class="loading_lt"> W</div>
+					<div class="loading_lt">a</div>
+					<div class="loading_lt">y</div>
+				</div>
+				<div class="loading_wd">
+					<div class="loading_lt">T</div>
+					<div class="loading_lt">h</div>
+					<div class="loading_lt">e </div>
+					<div class="loading_lt"> T</div>
+					<div class="loading_lt">r</div>
+					<div class="loading_lt">u</div>
+					<div class="loading_lt">t</div>
+					<div class="loading_lt">h</div>
+				</div>
+				<div class="loading_wd">
+					<div class="loading_lt">T</div>
+					<div class="loading_lt">h</div>
+					<div class="loading_lt">e </div>
+					<div class="loading_lt"> L</div>
+					<div class="loading_lt">i</div>
+					<div class="loading_lt">f</div>
+					<div class="loading_lt">e</div>
+				</div>
+				<div class="loading_wd"></div>
+				<div class="loading_wd"></div>
+				<!-- Bolinhas girando embaixo -->
+				<div class="dots">
+					<div class="dots_dt">.</div>
+					<div class="dots_dt">.</div>
+					<div class="dots_dt">.</div>
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+	</body>
 
-    <!--|Animation|-->
-    <script>document.addEventListener("DOMContentLoaded",(function(){AOS.init()}));</script>
-    <!--|Animation|-->
-  </head>
-  <body>
-    <header></header>
-
-    <main>
-      <section id="sc1">
-        <div data-aos="zoom-out" data-aos-easing="ease-in-out" data-aos-duration="5000" class="video-fundo">
-          <video autoplay loop>
-            <source src="../images/apav.mp4" type="video/mp4" autoplay>
-            Your browser does not support this video.
-          </video>
-        </div>
-        <h1 class="tt1" data-aos="flip-left" data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-duration="5000">Social Project<br><br>and Evangelistic</h1>
-      </section>
-      <section id="inspiracao">
-        <div class="dv1">
-          <h2 class="tt2" data-aos="fade-up" data-aos-easing="ease-in-out">INSPIRED BY THE CHRISTIAN FAITH</h2>
-          <span class="separator" data-aos="fade-up" data-aos-easing="ease-in-out"></span>
-          <p class="tx1" data-aos="fade-up" data-aos-easing="ease-in-out">
-            The Projeto Alcançando Vidas Association is dedicated to serving others, bringing God's love to the neediest communities.
-            <br>
-            <br>
-            In Heliópolis and other regions, we work tirelessly to improve the quality of life of families in vulnerable situations, offering food, maternal support and promoting social inclusion.
-            <br>
-            <br>
-            Our caravans bring hope to recovery homes, indigenous villages and underprivileged communities in several countries. We believe that faith in action can transform lives and build a brighter future for everyone."
-          </p>
-        </div>
-        <div class="dv2">
-          <div class="dv3">
-            <h2 class="tt3"data-aos="fade-up" data-aos-easing="ease-in-out">MISSION</h2>
-            <span class="separator" data-aos="fade-up" data-aos-easing="ease-in-out"></span>
-            <p class="tx2" data-aos="fade-up" data-aos-easing="ease-in-out">
-              Promote the development and well-being of families in situations of social vulnerability, offering support, resources and training that enable the construction of a dignified and self-sufficient life.
-              <br>
-              <br>
-              Our mission is to build a support network that strengthens community ties and contributes to reducing social inequalities. We seek to provide opportunities for growth and promote autonomy for all the families we serve.
-            </p>
-          </div>
-          <div class="dv3" data-aos="fade-up" data-aos-easing="ease-in-out">
-            <img class="im1" src="../images/1.webp">
-          </div>
-        </div>
-        <div class="dv2">
-          <div class="dv3">
-            <h2 class="tt3" data-aos="fade-up" data-aos-easing="ease-in-out">VISION</h2>
-            <span class="separator" data-aos="fade-up" data-aos-easing="ease-in-out"></span>
-            <p class="tx2" data-aos="fade-up" data-aos-easing="ease-in-out">
-              To be a national reference in assistance and support for families in vulnerable situations, contributing to the construction of a more just, inclusive and supportive society.
-              <br>
-              <br>
-              We aspire to a future where all families have access to rights and opportunities, overcoming social barriers and achieving a better quality of life.
-            </p>
-          </div>
-          <div class="dv3" data-aos="fade-up" data-aos-easing="ease-in-out">
-            <img class="im1" src="../images/2.webp">
-          </div>
-        </div>
-        <div class="dv2">
-          <div class="dv3">
-            <h2 class="tt3" data-aos="fade-up" data-aos-easing="ease-in-out">VALUES</h2>
-            <span class="separator" data-aos="fade-up" data-aos-easing="ease-in-out"></span>
-            <p class="tx2" data-aos="fade-up" data-aos-easing="ease-in-out">
-              Empathy: We put ourselves in the other person's shoes, seeking to understand and meet the specific needs of each family with respect and sensitivity.
-              <br>
-              <br>
-              Transparency: We act with clarity and responsibility in all actions, promoting trust and respect among families, partners and employees.
-              <br>
-              <br>
-              Solidarity: We believe in the strength of the community and the power of unity to overcome challenges and build a more inclusive environment for everyone.
-            </p>
-          </div>
-          <div class="dv3" data-aos="fade-up" data-aos-easing="ease-in-out">
-            <img class="im1" src="../images/3.webp">
-          </div>
-        </div>
-      </section>
-      <section id="contato">
-        <div class="dv4" data-aos="fade-down" data-aos-easing="ease-in-out">
-          <h2 class="tt4">Contact Us</h2>
-          <p class="tx4">R. Viracopos - Vila Heliopolis, São Paulo - SP, 04236-070</p>
-          <p class="tx4">Mon to Sun from 6:00pm to 10:00pm</p>
-          <p class="tx4"><a href="tel:+5511914874136" class="tx41">Telphone: +55 (11) 9 1487-4136</a></p>
-          <div class="dv5">
-            <a href="https://www.instagram.com/associacaoalcancandovidas/" target="_blank">
-              <img class="im4" src="../images/instagram.svg">
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=5511914874136&text=Hello,%20I%20came%20across%20your%20website%20and%20would%20like%20to%20know%20more%20about%20the%20project!" target="_blank">
-              <img class=im4 src="../images/whatsapp.svg">
-            </a>
-          </div>
-        </div>
-        <iframe class="im41" data-aos="fade-down" data-aos-easing="ease-in-out" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.684268497629!2d-46.5916984!3d-23.6156537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d6962fc2625%3A0x5fa2889d038577a8!2sAssocia%C3%A7%C3%A3o%20Alcan%C3%A7ando%20Vidas%20-%20APAV!5e0!3m2!1spt-BR!2sbr!4v1738076114171!5m2!1spt-BR!2sbr" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
-      <a href="https://api.whatsapp.com/send?phone=5511914874136&text=Hello,%20I%20came%20across%20your%20website%20and%20would%20like%20to%20know%20more%20about%20the%20project!" target="_blank">
-        <img class="whats" src="../images/whats.svg">
-      </a>
-      <div class="loading">
-        <div class="word">
-          <div class="letter">J</div>
-          <div class="letter">e</div>
-          <div class="letter">s</div>
-          <div class="letter">u</div>
-          <div class="letter">s</div>
-        </div>
-        <div class="word">
-          <div class="letter">T</div>
-          <div class="letter">h</div>
-          <div class="letter">e </div>
-          <div class="letter"> W</div>
-          <div class="letter">a</div>
-          <div class="letter">y</div>
-        </div>
-        <div class="word">
-          <div class="letter">T</div>
-          <div class="letter">h</div>
-          <div class="letter">e </div>
-          <div class="letter"> T</div>
-          <div class="letter">r</div>
-          <div class="letter">u</div>
-          <div class="letter">t</div>
-          <div class="letter">h</div>
-        </div>
-        <div class="word">
-          <div class="letter">T</div>
-          <div class="letter">h</div>
-          <div class="letter">e </div>
-          <div class="letter"> L</div>
-          <div class="letter">i</div>
-          <div class="letter">f</div>
-          <div class="letter">e</div>
-        </div>
-        <div class="word"></div>
-        <div class="word"></div>
-        <!-- Bolinhas girando embaixo -->
-        <div class="dots">
-          <div class="dot">.</div>
-          <div class="dot">.</div>
-          <div class="dot">.</div>
-        </div>
-      </div>
-    </main>
-    <footer></footer>
-  </body>
 </html>

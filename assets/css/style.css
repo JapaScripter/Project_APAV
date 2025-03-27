@@ -693,6 +693,7 @@
 	height: 60vw;
 	background-image: url(../images/doar9.webp);
 	background-size: cover;
+	background-position:center;
 }
 
 #da_sc::before {
@@ -1154,6 +1155,17 @@
 
 	#da_sc {
 		height: 210vw;
+	}
+	#da_sc::before {
+		content: "";
+		/* Necessário para criar o pseudoelemento */
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 210vw;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 0;
 	}
 
 	.da_tt {

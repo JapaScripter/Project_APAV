@@ -693,7 +693,7 @@
 	height: 60vw;
 	background-image: url(../images/doar9.webp);
 	background-size: cover;
-	background-position:center;
+	background-position: center;
 }
 
 #da_sc::before {
@@ -1009,6 +1009,10 @@
 		height: 217vw;
 	}
 
+	#he_sc::before {
+		height: 217vw;
+	}
+
 	.he_vd {
 		left: 105%;
 		transform: translate(-50%, -52%);
@@ -1087,7 +1091,7 @@
 	}
 
 	.sb_ft_dv {
-		height: 220vw;
+		height: 280vw;
 	}
 
 	.sb_he {
@@ -1100,7 +1104,7 @@
 	}
 
 	.sb_sd_dv {
-		height: 650vw;
+		height: 730vw;
 	}
 
 	.sb_td_tx {
@@ -1156,6 +1160,7 @@
 	#da_sc {
 		height: 210vw;
 	}
+
 	#da_sc::before {
 		content: "";
 		/* Necessário para criar o pseudoelemento */

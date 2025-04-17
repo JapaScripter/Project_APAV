@@ -1,26 +1,3 @@
-(function () {
-	// Adiciona um parâmetro de versão nos links dos arquivos CSS e JS
-	const version = new Date().getTime(); // Usa a data e hora atual como versão única
-
-	// Atualiza os links CSS
-	const links = document.querySelectorAll('link[rel="stylesheet"]');
-	links.forEach(link => {
-		const href = link.getAttribute('href');
-		if (href) {
-			link.setAttribute('href', href.split('?')[0] + '?v=' + version);
-		}
-	});
-
-	// Atualiza os scripts JS
-	const scripts = document.querySelectorAll('script[src]');
-	scripts.forEach(script => {
-		const src = script.getAttribute('src');
-		if (src) {
-			script.setAttribute('src', src.split('?')[0] + '?v=' + version);
-		}
-	});
-})();
-
 // Limpa o cache e recarrega a página
 window.onload = function () {
 	if ('caches' in window) {

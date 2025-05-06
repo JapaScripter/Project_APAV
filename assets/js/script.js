@@ -1,3 +1,25 @@
+// import '../css/style.css';
+
+// Em vez de importar tudo de uma vez
+// import { minhaFuncao } from './minhaFuncao';
+
+// Use o import() para carregar sob demanda
+// const minhaFuncaoLazy = () => import('./minhaFuncao');
+
+// // Usando import() para carregar um módulo sob demanda
+// const MeuComponente = React.lazy(() => import('./MeuComponente'));
+
+// function App() {
+// 	return (
+// 		<div>
+// 			<h1>Bem-vindo ao meu site!</h1>
+// 			<React.Suspense fallback={<div>Carregando...</div>}>
+// 				<MeuComponente />
+// 			</React.Suspense>
+// 		</div>
+// 	);
+// }
+
 // Limpa o cache e recarrega a página
 window.onload = function () {
 	if ('caches' in window) {
@@ -10,80 +32,57 @@ window.onload = function () {
 	}
 };
 
-window.addEventListener('load', function () { // Esperar a página carregar completamente
+// Função para esmaecer a tela de carregamento após a animação das palavras terminar
+function gradualFadeOut() {
+	setTimeout(() => {
+		document.querySelector('.loading').style.transition = "opacity 2s ease-in-out"; // Transição suave
+		document.querySelector('.loading').style.opacity = 0; // Esmaecer a tela de carregamento
+		setTimeout(() => {
+			document.querySelector('.loading').style.display = "none"; // Remove o display após a transição
+		}, 2000); // Garante que o display: none seja aplicado após a transição
+	}, 2000); // Espera todas as palavras aparecerem antes de iniciar o esmaecimento
+}
+
+window.addEventListener('load', function () {
+	// Começa a animação das palavras assim que a página carregar
+	showNextWord();
+});
+
+// Função para mostrar as palavras uma por uma
+function showNextWord() {
+	const words = document.querySelectorAll('.loading_wd');
+	let currentIndex = 0;
+
+	// Função para esconder a palavra anterior e mostrar a próxima
+	function handleWords() {
+		if (currentIndex > 0) {
+			words[currentIndex - 1].style.opacity = 0; // Esmaecer a palavra anterior
+		}
+		// Mostrar a próxima palavra, se houver
+		if (currentIndex < words.length) {
+			words[currentIndex].style.opacity = 1; // Torna a palavra visível
+			currentIndex++; // Avança para a próxima palavra
+			setTimeout(handleWords, 2000); // Exibe a próxima palavra a cada 2 segundos
+		} else {
+			gradualFadeOut(); // Chama o esmaecimento após a última palavra
+		}
+	}
+
+	// Exibe a primeira palavra imediatamente
+	if (words.length > 0) {
+		words[0].style.opacity = 1; // A primeira palavra aparece sem atraso
+		currentIndex = 1; // Inicia a partir da segunda palavra
+	}
+
+	setTimeout(handleWords, 2000);
+}
+
+window.addEventListener('load', function () {
 	// Esmaecer a tela de carregamento assim que a página carregar
 	document.querySelector('.loading').style.opacity = 0; // Esmaecer imediatamente
 	document.querySelector('.loading').style.visibility = "hidden"; // Torna invisível
 
 	// Iniciar a animação das palavras após o carregamento da página
-	const words = document.querySelectorAll('.loading_wd');
-	let currentIndex = 0;
-
-	// Função para mostrar as palavras uma por uma
-	function showNextWord() {
-		// Esconder a palavra anterior
-		if (currentIndex > 0) {
-			words[currentIndex - 1].style.opacity = 0;
-		}
-
-		// Mostrar a próxima palavra
-		words[currentIndex].style.opacity = 1;
-
-		// Avançar para a próxima palavra
-		currentIndex++;
-
-		// Se ainda houver palavras, exibe a próxima após 2 segundos
-		if (currentIndex < words.length) {
-			setTimeout(showNextWord, 2000); // Exibe a próxima palavra a cada 2 segundos
-		} else {
-			// Após a última palavra ser exibida, chama o esmaecimento gradual
-			gradualFadeOut(); // Agora chamamos após o último setTimeout
-		}
-	}
-
-	// Função para esmaecer a tela de carregamento após a animação das palavras terminar
-	function gradualFadeOut() {
-		setTimeout(() => {
-			document.querySelector('.loading').style.transition = "opacity 2s ease-in-out"; // Transição suave
-			document.querySelector('.loading').style.opacity = 0; // Esmaecer a tela de carregamento
-			setTimeout(() => {
-				document.querySelector('.loading').style.display = "none"; // Remove o display após a transição
-			}, 2000); // Garante que o display: none seja aplicado após a transição
-		}, words.length * 2000); // Espera todas as palavras aparecerem antes de iniciar o esmaecimento
-	}
-
-	// Começar a animação após a página ser completamente carregada
-	showNextWord();
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-	const words = document.querySelectorAll('.loading_wd');
-	let currentIndex = 0;
-
-	function showNextWord() {
-		// Esconder a palavra atual
-		if (currentIndex > 0) {
-			words[currentIndex - 1].style.opacity = 0;
-		}
-
-		// Mostrar a próxima palavra
-		words[currentIndex].style.opacity = 1;
-
-		// Avançar para a próxima palavra
-		currentIndex++;
-
-		// Se tiver mais palavras, exibir a próxima após 2 segundos
-		if (currentIndex < words.length) {
-			setTimeout(showNextWord, 2000);
-		} else {
-			// Remover a tela de carregamento após a última palavra
-			setTimeout(() => {
-				document.querySelector('.loading').style.display = 'none';
-			}, 1000); // Esconde após a última palavra ter aparecido
-		}
-	}
-
-	// Começar a animação
 	showNextWord();
 });
 
@@ -136,13 +135,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Função para alternar a exibição do menu
 function toggleMenu() {
-	const menuList = document.getElementById('lsm');
-	menuList.style.display = (menuList.style.display === 'none' || menuList.style.display === '') ? 'flex' : 'none';
-}
-
-function toggleMenu() {
 	const menuIcon = document.getElementById('mn');
 	const menuList = document.getElementById('lsm');
+
+	menuList.style.display = (menuList.style.display === 'none' || menuList.style.display === '') ? 'flex' : 'none';
 
 	// Verifica o estado atual do menu e altera os ícones
 	if (menuIcon.src.includes('menu.svg')) {

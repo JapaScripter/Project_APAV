@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 });
 
-
 // Função para atualizar o estilo do cabeçalho com base no scroll e no tipo de dispositivo
 function updateHeaderStyle() {
 	const header = document.getElementById('hd');
@@ -74,7 +73,6 @@ window.addEventListener('scroll', updateHeaderStyle);
 
 // Garante que o scroll inicie no topo quando a página for carregada
 window.onload = () => window.scrollTo(0, 0);
-
 
 // Oculta o menu ao carregar o conteúdo
 document.addEventListener('DOMContentLoaded', () => {

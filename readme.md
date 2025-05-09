@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/logo.webp" alt="Logo da APAV" width="200" border-radius="100%"/>
+  <img src="assets/images/logo/logo.webp" alt="Logo da APAV" width="200" border-radius="100%"/>
 </p>
 
 <h1 align="center">Site APAV</h1>

@@ -30,6 +30,7 @@ Com uma interface clara, responsiva e voltada para a usabilidade, o site busca f
 - **Google Maps Embed API** – Exibição de localização diretamente no site
 - **WhatsApp API (click-to-chat)** – Contato direto via WhatsApp
 - **Netlify** – Hospedagem e deploy contínuo
+- **Netlify.toml** – Configuração personalizada para redirecionamento e remoção de `.html` das URLs
 
 ---
 

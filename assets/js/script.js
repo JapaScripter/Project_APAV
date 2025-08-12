@@ -20,9 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	showNextWord();
 
-	// Quando a página estiver 100% carregada, escondemos o loading imediatamente
 	window.addEventListener('load', function () {
-		stopAnimation = true; // cancela a animação futura de palavras
+		stopAnimation = true;
 
 		const loadingScreen = document.querySelector('.loading');
 		loadingScreen.style.transition = "opacity 1s ease-in-out";
@@ -34,16 +33,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 });
 
-// Função para atualizar o estilo do cabeçalho com base no scroll e no tipo de dispositivo
 function updateHeaderStyle() {
 	const header = document.getElementById('hd');
 	const logo = document.querySelector('.lg');
 	const larguraTela = window.innerWidth;
 
-	// Verifica se o dispositivo é móvel ou desktop
 	const isMobile = larguraTela <= 768;
 
-	// Se for dispositivo móvel
 	if (isMobile) {
 		if (window.scrollY > 1) {
 			// header.style.height = '80px'; // Ajuste da altura do cabeçalho para dispositivos móveis
@@ -68,30 +64,17 @@ function updateHeaderStyle() {
 	}
 }
 
-// Chama a função de atualização de estilo sempre que o usuário rolar a página
 window.addEventListener('scroll', updateHeaderStyle);
 
-// Garante que o scroll inicie no topo quando a página for carregada
 window.onload = () => window.scrollTo(0, 0);
 
-// Oculta o menu ao carregar o conteúdo
-document.addEventListener('DOMContentLoaded', () => {
+window.toggleMenu = function () {
 	const menuList = document.getElementById('lsm');
-	menuList.style.display = 'none';
-});
+	const menuIcon = document.getElementById('mn');
+	if (!menuList) return console.error('#lsm not found');
+	const isHidden = menuList.style.display === 'none' || menuList.style.display === '';
+	menuList.style.display = isHidden ? 'flex' : 'none';
+	if (menuIcon) menuIcon.src = isHidden ? '/assets/images/botoes/close.svg' : '/assets/images/botoes/menu.svg';
+};
 
-function toggleMenu() {
-	const menuIcon = document.getElementById('mnm');
-	const menuList = document.getElementById('lsm');
 
-	menuList.style.display = (menuList.style.display === 'none' || menuList.style.display === '') ? 'flex' : 'none';
-
-	// Verifica o estado atual do menu e altera os ícones
-	if (menuIcon.src.includes('menu.svg')) {
-		menuIcon.src = '../images/close.svg'; // Muda para o ícone de "X"
-		menuList.style.display = 'flex'; // Exibe o menu lateral
-	} else {
-		menuIcon.src = '../images/menu.svg'; // Muda de volta para o ícone de menu
-		menuList.style.display = 'none'; // Esconde o menu lateral
-	}
-}

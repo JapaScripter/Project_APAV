@@ -1494,7 +1494,7 @@
   background: white;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.1vw 1vw #f0f0f0;
   transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   cursor: pointer;
 }
@@ -1513,17 +1513,17 @@
 .card.left-1 {
   z-index: 5;
   transform: translateX(-200px) scale(0.9) translateZ(-100px);
-  opacity: 0;
+  opacity: 0.5;
 }
 .card.left-2 {
-  z-index: 1;
+  z-index: 0.5;
   transform: translateX(-400px) scale(0.8) translateZ(-300px);
-  opacity: 0;
+  opacity: 0.5;
 }
 .card.right-1 {
   z-index: 5;
   transform: translateX(200px) scale(0.9) translateZ(-100px);
-  opacity: 0;
+  opacity: 0.5;
 }
 .card.right-2 {
   z-index: 1;
